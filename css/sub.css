@@ -1,0 +1,174 @@
+main.container{
+    text-align: left;
+    margin-top: 81px;
+}
+
+/* ------------------side menu--------------------- */
+.side_menu{
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    width: 300px;
+}
+
+.side_menu > div{
+    position: relative;
+    height: 61px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+section.main_content{
+    float: right;
+}
+.sub.active,
+.side_menu label:hover,
+.side_menu ul li a:hover,
+.side_menu ul li a.active{
+    background: #aa221c;
+    color: #fff;
+    font-weight: bold;
+}
+
+.side_menu label{
+    font-weight: bold;
+    padding: 20px;
+    display: block;
+    background: #fff;
+    line-height: 20px;
+    font-size: 18px;
+    border-bottom: 1px solid #c4c4c4;
+    position: relative;
+    cursor: pointer;
+}
+
+.side_menu label.sub::after{
+    content: '+';
+    position: absolute;
+    right: 20px;
+    color: #303030;
+}
+.side_menu label.sub.active::after,
+.side_menu label.sub:hover::after{
+    color: #fff;
+}
+
+.side_menu div:last-child label{
+    border-bottom: none;
+}
+
+.side_menu ul li a{
+    padding: 20px 0 20px 40px;
+    display: block;
+    background: #fff;
+    line-height: 21px;
+    font-size: 16px;   
+}
+
+.side_menu ul li:last-child{
+    border-bottom: 1px solid #c4c4c4;
+}
+.side_menu ul li a::before{
+    content: '·';
+    margin-right: 12px;
+}
+
+.side_menu input{
+    display: none;
+}
+
+.side_menu ul{
+    transition: 0.3s;
+}
+
+
+
+/* ------------------about us_main con--------------------- */
+
+main .main_content{
+    width: 995px;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+.main_content .main_content_tt p{
+    margin: 10px 0 74px;
+}
+.main_content .info_box{
+    margin-bottom: 50px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.main_content .info_box:last-child{
+    margin-bottom: 0;
+}
+.main_content .info_box > *{
+    float: left;
+}
+
+.main_content .info_box i{
+    margin-right: 40px;
+}
+
+.main_content .info_box i{
+    width: 80px;
+    height: 80px;
+    background: #aa221c;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    font-size: 24px;
+    color: #fff;
+}
+.main_content .info_box h3{
+    padding: 12px 0;
+}
+.main_content .info_box p{
+    width: 494px;
+    position: absolute;
+    right: 0;
+    padding: 12px 0;
+}
+
+/* ------------------ notice main con--------------------- */
+.main_notice_table{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main_notice_table thead{
+    border-top: 3px solid #c4c4c4; 
+    border-bottom: 3px solid #c4c4c4;
+    font-weight: bold;
+}
+.main_notice_table *{
+    padding: 15px 0;
+    color: #303030;
+
+}
+
+.main_notice_table tbody tr{
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.main_notice_table tbody tr:hover{
+    background: #e8e8e8;
+}
+
+.table_pager_area .table_pager{
+    text-align: center;
+}
+.table_pager_area .table_pager a{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.table_pager_area .table_pager a.active{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.table_pager_area .table_pager a:last-child{
+    margin-right: 0;
+}

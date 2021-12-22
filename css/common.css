@@ -1,0 +1,330 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* font-style
+    font-family: 'Noto Sans KR', sans-serif; 콘텐츠
+    font-family: 'Roboto', sans-serif; 사이드 메뉴바
+    
+*/
+
+/* ------------------------------ LAYOUT ------------------------------ */
+
+.container{
+    width: 1296px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.cf::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.mm{
+    margin: 162px auto 162px;
+}
+
+hr{
+    border: none;
+    border-bottom: 1px solid #aa221c;
+    transform: translateY(-8px);
+}
+
+
+/* -------------------------------HEADER-------------------------- */
+
+header{
+    height: 270px;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    background: linear-gradient(#fff 270px, #aa221c 15%);
+    transition: 0.5s;
+}
+
+
+.header_top{
+    text-align: center;
+    position: relative;
+    padding: 2.815rem 0;
+}
+
+.header_top .logo a{
+    background: url(../images/logo.png) no-repeat;
+    width: 7.5rem;
+    height: 6.25rem;
+    text-indent: -9999em;
+    display: inline-block;
+
+}
+.header_top .header_login{
+    position: absolute;
+    right: 0.625rem;
+    bottom: 3.375rem;
+}
+.header_top .header_login li {
+    float: left;
+    margin-left: 0.9375rem;
+}
+.header_top .header_login i{
+    margin-right: 0.5rem;
+}
+
+.nav-title:hover .nav-header > a{
+    background: #aa221c;
+    color: #fff;
+    border-color: #fff;
+}
+
+header nav ul > li{
+    float: left;
+    width: 13.5rem;
+    position: relative;    
+}
+
+header nav .nav-header > a{
+    border-bottom: 2px solid transparent;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+header nav ul li a{
+    display: block;
+    line-height: 80px;
+}
+header nav ul li ul{
+    position: absolute;
+    top: 100%;
+    font-weight: normal;
+}
+
+header nav ul ul a{
+    font-size: 1rem;
+    color: #b8b8b8;
+    pointer-events: none;
+}
+
+
+.sh_hidden{
+    display: block;
+    width: 1px;
+    height: 1px;
+    text-indent: -999em;
+    overflow: hidden;
+}
+/* ------------------------------ TYPOGRAPHY ------------------------------*/
+body{
+    font-size: 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.6875rem;
+    color: #303030;
+    position: relative;
+    padding-top: 271px;
+}
+
+.nav-title{
+    font-size: 1.25rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+}
+
+.content-main{
+    font-size: 1.125rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+}
+
+.content-tt{
+    font-size: 1.5rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.side-tt{
+    font-size: 1.125rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+em, .em{
+    color: #aa221c;
+}
+
+.end_pages{
+    color: #fff;
+    font-weight: bold;
+    pointer-events: all;
+}
+/* ------------------------------ Link Button ------------------------------ */
+
+
+/* ------------------------------ Link Button ------------------------------ */
+.btn{
+    display: inline-block;
+    width: 18rem;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+    background: #aa221c;
+    color: #fff;
+    border-radius: 0.625rem;
+    box-shadow: 2px 2px 4px #000000;
+    border: 3px solid #FFFFFF;
+    font-weight: 900;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+/* ------------------------------ FORM ------------------------------*/
+/* ------------------------------ COLORS ------------------------------ */
+/* :root{
+    --highlight-color: #aa221c;
+    --sub-color: #4e4c4b;
+    --sub2-color: #f8dcc4;
+    --bg-color: #fff;
+    --text-color: #303030;
+} */
+
+em{
+    color: #aa221c;
+}
+/* ------------------------------ footer ------------------------------ */
+
+footer.mm{
+    background: #aa221c;
+    text-align: center;
+    padding: 45px 0;
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+footer ul{
+    display: inline-block;
+}
+footer ul:first-child{
+    margin-bottom: 30px;
+}
+
+footer ul li{
+    float: left;
+}
+
+footer a{
+    color: #fff;
+}
+
+footer a::after{
+    content: '';
+    border-right: 1px solid #fff;
+    font-size: 11px;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+footer ul li:last-child a:after{
+    border-right: none;
+}
+
+footer .container{
+    position: relative;
+}
+
+footer .sns{
+    position: absolute;
+    right: 0;
+    font-size: 54px;
+    bottom: 11px;
+}
+
+
+footer .sns a::after{
+    border-right: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------ fix button ------------------------------ */
+.fix_button{
+    position: fixed;
+    top: 30%;
+    right: calc(50% - 847px);
+}
+.fix_button ul li{
+    margin-bottom: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.fix_button ul li:hover{
+    transform: scale(1.1);
+}
+.fix_button ul li .fix_a_wrap{
+    display: block;
+    position: relative;    
+    width: 108px;
+    height: 108px;
+    background: #4e4c4b;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+} 
+
+.fix_button ul .fix_a_wrap{
+    color: #fff;
+}
+
+.fix_button ul li:first-child a{
+    background: #aa221c;
+}
+
+.fix_button ul li p{
+    margin-bottom: 9px;
+}
+
+.fix_button ul li i{
+    font-size: 44px;
+}
+
+.fix_button ul li .fix_a_wrap .text_wrap{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.fix_button ul li:last-child .fix_a_wrap{
+    background: none;
+}
+
+.fix_button ul li:last-child i{
+    font-size: 70px;
+    font-weight: 900;
+    color: #4e4c4b;
+    background: #fff;
+    border-radius: 50%;
+    border: none;
+    overflow: hidden;
+}
+
+#go_top{
+    opacity: 0;
+    transition:opacity 0.3s ease-in-out;
+}
+
+#go_top.active{
+    opacity: 1;
+    
+}
+
+
